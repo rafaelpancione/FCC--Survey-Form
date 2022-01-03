@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Surv(ey)ival Form</h1>
+    <p id="description">This is a survival form and not a survey form.</p>
+
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+
+        <label for="email" id="email-label">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+        <label for="number" id="number-label">Age(Optional):</label>
+        <input type="number" id="number" name="number" min="18" max="80" placeholder="Age">
+        
+        <label for="drop-survivor">What kind of survivor are you?</label>
+        <select name="drop-survivor" id="dropdown" required>
+            <option value="hunter">Hunter</option>
+            <option value="assassin">Assassin</option>
+            <option value="runner">Runner</option>
+            <option value="helper">Helper</option>
+        </select>
+        
+        <h2>
+        Who would be your survival partner?
+        </h2>  
+        <label for="dog">Your Dog</label>
+        <input type="radio" name="dog">
+        
+        <label for="friend">Your best friend</label>
+        <input type="radio" name="friend">
+        
+        <label for="parents">Your parents</label>
+        <input type="radio" name="parents">
+
+        <label for="no-cats">Anyone except cats.</label>
+        <input type="radio" name="no-cats">
+
+        <h2>
+        What items would you take to the apocalypse?
+        </h2>
+
+        <label for="knife">Knife</label>
+        <input type="checkbox" name="knife">
+        
+        <label for="pistol">Pistol</label>
+        <input type="checkbox" name="pistol">
+        
+        <label for="crossbow">Crossbow</label>
+        <input type="checkbox" name="crossbow">
+
+        <label for="bat">Bat</label>
+        <input type="checkbox" name="bat">
+
+        <label for="katana">Katana</label>
+        <input type="checkbox" name="katana">
+
+        <label for="mother">My mother in law</label>
+        <input type="checkbox" name="mother">
+
+        <h2>Leave a message if you don't survive.</h2>
+
+        <textarea></textarea>
+
+        <button id="submit">Submit</button>
+
+    </form>
+</body>
+</html>
